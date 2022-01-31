@@ -1,0 +1,13 @@
+
+body {
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+#ordered_items{
+    display: flex;
+    visibility: visible;
+    text-align: center;
+    align-items: center;
+}

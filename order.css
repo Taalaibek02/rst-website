@@ -1,0 +1,138 @@
+body{
+    background-image: url(japanimage.jpeg);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 0%;
+    margin:0%;
+    color: white
+}
+#container2{
+    display: block; 
+}
+
+#banner h1{
+    display: inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+#banner{
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 18px;
+}
+
+footer{
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    color:black
+}
+
+#ordered_items h3{
+    font-weight: bold;
+    color: limegreen;
+    text-align: center;
+}
+#ordered_items .dt{
+    text-align: center;
+    color: lime;
+}
+
+#ordered_items thead, tfoot{
+    background-color: grey;
+}
+#ordered_items .left{
+    text-align: left;
+}
+
+#ordered_items .right{
+    text-align: right;
+}
+#ordered_items table{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ordered_items #a a{
+    text-decoration: none;
+    color: lime;
+}
+#ordered_items #a{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#menu {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.tab {
+    width: 100%;
+}
+.tab h4{
+    text-align: center;
+    border: 1px solid white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-collapse: collapse;
+    font-size: 20px;
+    display: inline;
+}
+
+/* #menu .tab #tsushi:hover + .tabcontent {
+    visibility: visible;
+} */
+/* #menu .tab .tabcontent:hover{
+    visibility: visible;
+} */
+#tsushi{
+    background-color: white;
+    color: black;
+}
+#tdrinks{
+    background-color: pink;
+    color: purple;
+}
+#tdessert{
+    background-color: pink;
+    color: purple;
+}
+#menu .tab .tabcontent{
+    width: auto;
+    position: relative;
+    display: flex;
+    visibility:visible;
+}
+/* #menu .tab #tdrinks:hover + .tabcontent2 {
+    visibility: visible;
+} */
+/* #menu .tab .tabcontent2:hover{
+    visibility: visible;
+} */
+#menu .tab .tabcontent2{
+    width: auto;
+    position: relative;
+    display: flex;
+    visibility: hidden;
+}
+/* #menu .tab #tdessert:hover + .tabcontent3 {
+    visibility: visible;
+} */
+/* #menu .tab .tabcontent3:hover{
+    visibility: visible;
+} */
+#menu .tab .tabcontent3{
+    width: auto;
+    position: relative;
+    display: flex;
+    visibility: hidden;
+}
+

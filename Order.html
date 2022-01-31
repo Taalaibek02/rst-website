@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Restaurant Website: page for ordering">
+    <meta name="keywords" content="Order, Menu, Sushi, Food, City Sushi">
+    <meta name="author" content="Taalaibek Ulukbek uulu">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css" type="text/css" media="all">
+    <link rel="stylesheet" href="print.css" type="text/css" media="print">
+    <title>Order</title>
+    <script src = "order.js" defer></script>
+</head>
+<body onload ="currentDate()">
+    <div id="container2">
+        <header id="banner">
+            <img src="Sushi-96.png" alt="Restaurant logo" title="Image showing Restaurant logo">
+            <h1>CITY SUSHI</h1>
+        </header>
+        <div id = "menu">
+            <form id="show_menu" name="show_menu" method="get" action="Order.html">
+                <fieldset>
+                    <legend>Menu</legend>
+                    <div class="tab">
+                        <h4 id="tsushi" onclick="show_tabcontent(1)">Sushi</h4>
+                        <div id="sushi" class="tabcontent">
+                            <div id="sushi_combo">
+                                <img src="sushi-1.jpg" alt="Sushi combo" title="Image showing Sushi combo">
+                                <input type="text" id="combo_sushi" name="combo_sushi" value="">
+                                <input class="addC" id="sushiCom" type="button" value="add">
+                            </div>
+    
+                            <div id="tuna_sushi">
+                                <img src="sushi-2.jpg" alt="Tuna sushi" title="Image showing Tuna sushi">
+                                <input type="text" id="sushi_tuna" name="sushi_tuna" value="">
+                                <input class="addC" id="tunaSus" type="button" value="add">
+                            </div>
+                            
+                            <div id="vegetarian_sushi">
+                                <img src="sushi-3.jpg" alt="Vegetarian sushi" title="Image showing Vegetarian sushi">
+                                <input type="text" id="sushi_vegetarian" name="sushi_vegetarian" value="">
+                                <input class="addC" id="vegiSus" type="button" value="add">
+                            </div>
+                        </div>
+                        <h4 id="tdrinks" onclick="show_tabcontent(2)">Drinks</h4>
+                        <div id="drinks" class="tabcontent2">
+                            <div id="wine">
+                                <img src="drink-1.jpg" alt="Red Wine" title="Image showing Red Wine">
+                                <input type="text" id="red_wine" name="red_wine" value="">
+                                <input class="addC" id="wined" type="button" value="add">
+                            </div>
+                            <div id="mochito">
+                                <img src="drink-2.jpg" alt="Mochito" title="Image showing Mochito">
+                                <input type="text" id="amochito" name="amochito" value="">
+                                <input class="addC" id = "mochitod" type="button" value="add">
+                            </div>
+                        </div>
+                        <h4 id="tdessert" onclick="show_tabcontent(3)">Dessert</h4>
+                        <div id="dessert" class="tabcontent3">
+                            <img src="dessert-1.jpg" alt="Cheesecake" title="Image showing cheesecake">
+                            <input type="text" id="cheesecake" name="cheesecake" value="">
+                            <input class="addC" id = "dessertd" type="button" value="add">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="ordered_items">
+            <h3>Ordered Items</h3>
+            <div id="currentDate" class="dt">
+                10 Oct 2021 18:30
+            </div>
+            <br>
+            <div id="tableGuests" class="dt">
+                Table:4 - No.of Guests 3
+            </div>
+            
+            <table id="order">
+                <thead>
+                    <tr>
+                        <th class="left">Description</th>
+                        <th class="right">Qty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr id="total">
+                        <td class="left">Total</td>
+                        <td class="right"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div id="a">
+                <button id="undo" onclick="undo()">undo</button>
+            </div>
+        </div>
+        <footer>
+            <p>
+                "@CityU 2021 - sources of images and text from CS2204 Course 
+                Files - designed by Taalaibek Ulukbek uulu"
+            </p>
+            <p><a href="index.html"> Home page </a></p>
+        </footer>
+    </div>
+</body>
+</html>

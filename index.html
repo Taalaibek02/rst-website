@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Restaurant Website">
+    <meta name="keywords" content="Order, Menu, Sushi, Food, City Sushi">
+    <meta name="author" content="Taalaibek Ulukbek uulu">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="Sushi-64.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css" type="text/css" media="all">
+    <link rel="stylesheet" href="print.css" type="text/css" media="print">
+    <script src="index.js"></script>
+</head>
+<body onload = "run_promo()">
+    <div id = "container">
+        <header id="banner">
+            <img src="Sushi-96.png" alt="Restaurant logo" title="Image showing Restaurant logo">
+            <h1>CITY SUSHI</h1>
+        </header>
+
+        <section id="shop_info" class="info">
+            <div class="address">
+                <h3><b> Address</b></h3>
+                <p>83 Tat Chee Avenue,<br>Kowloon,<br>Hong Kong</p>
+            </div>
+            <div class="tel">
+                <h3><b>Tel</b></h3>
+                <p>3442-7788</p>
+            </div>
+            <div class="bhours">
+                <h3><b>Business Hours</b></h3>
+                <p>12:00 - 3:00pm <br>6:30 - 11:30pm <br>Last Order 10:30pm</p>
+            </div>
+            <div class="sdishes">
+                <h3><b>Signature Dishes</b></h3>
+                <ul>
+                    <li>Foie gras with mustard seeds and green onions;</li>
+                    <li>Bisque - a smooth and creamy, French potage;</li>
+                    <li>Croque Monsieur - baked or fried boiled ham and cheese sandwich</li>
+                </ul>
+            </div>
+            <div class="alocation">
+                <h3><b>Location</b></h3>
+                <img src="location.jpg" alt="Restaurant Location" title="Image showing Restaurant Location">
+    
+                <br>
+                <br>
+                <a href="Order.html"><img src="button.png" alt="Click to place order"></a>
+            </div>
+        </section>
+    
+        <div id="promotion_info" class="info">
+            <h3 id="promotion_info_txt" >LUNCH TIME SPECIAL OFFER - $188 SUSHI SET 12 PIECES</h3>
+            <div id="video_promo">
+
+                <video id = "promo_video" controls="controls" autoplay onended="change_video1()">
+                    <source src="http://courses.cs.cityu.edu.hk/cs2204/video/barbecue.mp4" type="video/mp4">
+                    <h2>Your browser does not support this video format</h2>
+                </video>
+            </div>  
+        </div>
+
+        <div id="reservation" class="info">
+            <form method="get" action="index.html" name = "myForm" onsubmit="return check_input()" onreset="return check_reset();">
+                <fieldset>
+                    <legend>Reservation</legend>
+                    <p>
+                        <div class="block">
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date" value="">
+                        </div>
+                        <br>
+                        <div class="block">
+                            <label for="booking_time">Time:</label>
+                            <select id = "booking_time" name = "booking_time">
+                                <option value="slot1">12:00 - 2:00 pm</option>
+                                <option value="slot2">2:00 - 3:00 pm</option>
+                                <option value="slot3">6:30 - 8:00 pm</option>
+                                <option value="slot4">8:00 - 9:30 pm</option>
+                                <option value="slot5">9:30 - 11:30 pm</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="block">
+                            <label for="guest_number">No. of Guests:</label>
+                            <input type="text" id="guest_number" name="guest_number" value="">
+                        </div>
+                        <br>
+                        <span id = "error_text"><br></span>
+                        <div class="block">
+                            <input type="submit" value="Check Availability">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+        <br>
+        <footer>
+            <span id="copyRight">
+                "@CityU 2021 - sources of images and text from CS2204 Course 
+                Files - designed by Taalaibek Ulukbek uulu"
+            </span>
+        </footer>
+    </div>
+</body>
+</html>

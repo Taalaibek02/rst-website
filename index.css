@@ -1,0 +1,96 @@
+body{
+    background-image: url(japanimage.jpeg);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 0%;
+    margin:0%;
+    color: white
+}
+#container{
+    display: block; 
+}
+
+#banner h1{
+    display: inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+#banner{
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 18px;
+}
+
+footer{
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    color:black
+}
+#shop_info .address{
+    display: block;
+    float: left;
+    margin: 5px;
+}
+#shop_info .tel{
+    display: block;
+    float: left;
+    margin: 5px;
+}
+#shop_info .bhours{
+    display: block;
+    float: left;
+    margin: 5px;
+}
+#shop_info .sdishes{
+    display: block;
+    float: left;
+    margin: 5px;
+}
+#shop_info .alocation{
+    display: block;
+    clear:both;
+}
+.info h3{
+    color: yellowgreen;
+}
+.info{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+
+#promotion_info h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#promotion_info video{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75%;
+    width: 75%;
+}
+
+#reservation legend{
+    text-align: center;
+    color: black;
+    background-color: azure;
+}
+
+
+#reservation .block{
+    text-align: center;
+}
+
+
